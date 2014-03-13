@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="scotchApp">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 	<title>Angular Routing Example from scotch.io</title>
@@ -11,9 +11,10 @@
 	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
 
 	<!-- load angular -->
-	<script src="js/angular.min.js"></script>
+	<!-- <script src="js/angular.min.js"></script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 </head>
-<body>
+<body ng-controller="mainController">
 	<!-- persistent header-->
 	<header>
 		<nav class="navbar navbar-default">
@@ -34,6 +35,7 @@
 	<div id="main">
 		<!-- angular templating -->
 		<!-- this is where content will be injected -->
+		{{ message }}
 	</div>
 
 
